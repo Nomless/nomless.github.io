@@ -56,6 +56,10 @@ body
 #links
 {
 	list-style-type: none;
+	max-width: 500px;
+	min-width: 200px;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 #links a
@@ -65,15 +69,11 @@ body
 
 #links li
 {
-	margin-left: auto;
-    margin-right: auto;
 	display: block;
 	font: 32px 'Roboto', sans-serif;
 	margin-top: 50px;
 	padding: 20px;
-	max-width: 500px;
-	min-width: 200px;
-	text-align: center;	
+	text-align: center;
 	color: #000000;
 	transition: color 2s, background-color 2s;
 }
@@ -106,6 +106,11 @@ body
 }
 
 .project-container img
+{
+	
+}
+
+.contact-container img
 {
 	
 }
