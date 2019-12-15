@@ -75,7 +75,7 @@ body
 	min-width: 200px;
 	text-align: center;	
 	color: #000000;
-	transition: color 2s, background-color 3s;
+	transition: color 2s, background-color 2s;
 }
 
 #links li:hover
