@@ -14,13 +14,13 @@ body
 
 @keyframes background-animation {
 	0% {
-		background-position: 0% 50%;
+		background-position: 0% 0%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 0% 100%;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: 0% 0%;
 	}
 }
 
@@ -30,8 +30,8 @@ body
 	height: auto;
 	width: 100%;
 	position: absolute;
-	background: -webkit-linear-gradient(-45deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 20%, rgba(0,212,255,1) 100%);
-	background-size: 400% 400%;
+	background: -webkit-linear-gradient(90deg, rgba(50,50,121,1), rgba(0,212,255,1));
+	background-size: 100% 200%;
 	-webkit-animation: background-animation 30s ease infinite;
 }
 
@@ -57,7 +57,6 @@ body
 {
 	list-style-type: none;
 	max-width: 500px;
-	min-width: 200px;
 	margin-left: auto;
     margin-right: auto;
 }
@@ -93,7 +92,6 @@ body
 	margin-right: 20px;
 	padding: 20px;
 	max-width: 500px;
-	min-width: 200px;
 	text-align: center;	
 	color: #000000;
 	transition: color 2s, background-color 2s;
@@ -105,12 +103,105 @@ body
 	background-color: rgba(19, 20, 29, .1);
 }
 
+#contacts li
+{
+	display: inline-block;
+	font: 32px 'Roboto', sans-serif;
+	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+	max-width: 500px;
+	text-align: center;	
+	color: #000000;
+	transition: color 2s, background-color 2s;
+}
+
+#contacts li:hover
+{
+	color: #FFFFFF;
+	background-color: rgba(19, 20, 29, .1);
+}
+
 .project-container img
 {
-	
+	width: 128px;
+	height: 128px;
 }
 
 .contact-container img
 {
+	width: 72px;
+	height: 72px;
+}
+
+@media screen and (min-width: 1000px)
+{
+	#header img
+	{
+		width: 712px;
+		height: 184px;
+	}
+
+	#header img:hover
+	{
+		width: 142.4px;
+		height: 36.8px;
+	}
 	
+	#contacts li
+	{
+		font: 64px 'Roboto', sans-serif;
+	}
+	
+	.contact-container img
+	{
+		width: 128px;
+		height: 128px;
+	}
+}
+
+@media screen and (max-width: 400px)
+{	
+	#links 
+	{
+		max-width: 100px;
+	}
+
+	#links li
+	{
+		font: 8px 'Roboto', sans-serif;
+		margin-top: 10px;
+		padding: 10px;
+	}
+	
+	#header
+	{
+		margin-top: 10px;
+	}
+	
+	#header img
+	{
+		width: 133px;
+		height: 34px;
+	}
+
+	#header img:hover
+	{
+		width: 142.4px;
+		height: 36.8px;
+	}
+	
+	#contacts li
+	{
+		font: 8px 'Roboto', sans-serif;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+	
+	.contact-container img
+	{
+		width: 32px;
+		height: 32px;
+	}
 }
