@@ -126,14 +126,50 @@ body
 #projectinfo
 {
 	display: block;
-	font: 32px 'Roboto', sans-serif;
+	font: 16px 'Roboto', sans-serif;
 	margin-top: 50px;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 20px;
 	max-width: 500px;
 	text-align: center;	
-	background: #FFFFFF;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+#projectinfo li
+{
+	display: inline-block;
+	font: 16px 'Roboto', sans-serif;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	max-width: 500px;
+	text-align: center;	
+	background-color: rgba(255, 255, 255, .8);
+}
+
+.betterbutton {
+	background-color: #4CAA60;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition: color 2s, background-color 2s;
+}
+
+.betterbutton:hover {
+	background-color: #69db81;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
 }
 
 .project-container img
@@ -158,8 +194,8 @@ body
 
 	#header img:hover
 	{
-		width: 142.4px;
-		height: 36.8px;
+		width: 801px;
+		height: 207px;
 	}
 	
 	#contacts li
